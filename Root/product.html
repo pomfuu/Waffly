@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <title>Waffly - Home</title>
+</head>
+<style>
+    body{
+        font-family: 'Bricolage Grotesque', sans-serif;
+        background-color: #FBFAF5;
+    }
+    .nav-link{
+        color: #2F189A;
+    }
+    .purple-btn{
+        background-color: #2F189A;
+    }
+    .purple-btn:hover{
+        transition: 0.3s ease-in-out;
+        color: #2F189A !important;
+        background-color: #F2F2FF;
+        border-color: #2F189A;
+    }
+    .lokasi{
+        height: 33vw;
+        object-fit: cover;
+    }
+    .explore{
+        color: #2F189A;
+    }
+    .explore:hover{
+        color: #1e1e1e;
+        transition: 0.3s ease-in-out;
+    }
+    .card-title{
+        min-height: 6vw;
+    }
+    .nav-link.nav2:hover, .nav-link.nav2.active{
+        background-color: #2F189A !important;
+        color: #F2F2FF !important;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+        background-color: #FBFAF5;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #2F189A;
+        border-radius: 5px;
+    }
+    @media (max-width: 991.98px) {
+        .pancake1, .banner{
+            width: 100%;
+        }
+        .header-title{
+            text-align: center !important;
+        }
+        .nav-collapse{
+            width: 100%;
+            position: relative !important;
+        }
+        .header{
+            padding-top: 1vw !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .nav-origin{
+            display: none;
+        }
+        .navigation{
+            display: none;
+        }
+    }
+
+    @media (max-width: 480px) {
+
+    }
+
+    @media (max-width: 380px) {
+
+    }
+
+    @media (max-width: 280px) {
+
+    }
+</style>
+<body>
+    <section class="container" id="header-main">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg my-3 bg-transparent">
+                    <div class="container-fluid p-0">
+                      <a class="navbar-brand fw-semibold fs-3" href="#" style="color: #2F189A;">Waffly</a>
+                      <button style="color: #FBFAF5 !important; border: none; " class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="color: #2F189A !important;"></span>
+                      </button>
+                      <div class="collapse navbar-collapse pe-0 me-0 mx-auto align-items-center justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-collapse mb-2 py-1 px-5 rounded-5 bg-white gap-4" style="position: fixed; z-index: 100; margin-right: 8vw;">
+                          <li class="nav-item">
+                            <a class="nav-link fw-medium" aria-current="page" href="./home.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fw-medium" aria-current="page" href="./product.html">Our Product</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fw-medium" aria-current="page" href="./home.html#locations">Location</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link fw-medium" aria-current="page" href="./home.html#contact">Contact</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex ms-auto" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border-color: transparent;">
+                            <button class="btn" type="submit" style="background-color: #2F189A;"><i class="bi bi-search text-white"></i></button>
+                        </form>
+                      </div>
+                    </div>
+                </nav>
+                <section>
+                    <div class="row align-items-center justify-content-center text-center py-5 my-5 header">
+                        <div class="col-md-2 banner">
+                            <h1 class="fw-semibold text-start header-title" style="color: #2F189A; font-size: 4.5rem;">Waffle Bliss Awaits.</h1>
+                        </div>
+                        <div class="col-md-4 banner">
+                            <img src="./assets/pancake-banner.png" class="mb-4" style="height: 22vw;" alt="">
+                        </div>
+                        <div class="col-md-3 text-start fs-5 banner">
+                            <p class="py-2 px-3 text-white text-center rounded-3" style="background-color: #2F189A;">Here We Serve</p>
+                            <div class="" style="color: #2F189A;">
+                                <p class="m-0 p-0">Waffle</p>
+                                <hr class="my-2">
+                                <p class="m-0 p-0">More Waffle</p>
+                                <hr class="my-2">
+                                <p class="m-0 p-0">Just Waffle :)</p>
+                                <hr class="my-2">
+                                <p class="m-0 p-0">oh and some <b>sweets!</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <footer class="p-5" style="background-color: #2F189A; margin-top: 18rem;">
+        <div class="container">
+            <div class="row text-white align-items-top">
+                <div class="col-md-4">
+                    <p class="mb-1 fs-3 fw-semibold">Waffly</p>
+                    <p class="mb-0">&copy; 2023 Waffly Copyright.</p>
+                </div>
+                <div class="col-md-3 navigation">
+                    <p class="mb-3 fw-semibold">Navigate</p>
+                    <p><a href="#" class="text-decoration-none text-white">Home</a></p>
+                    <p><a href="./product.html" class="text-decoration-none text-white">Our Product</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p class="mb-3 fw-semibold">Contact Us</p>
+                    <a href="https://web.whatsapp.com/" target="_blank" class="bi bi-whatsapp fs-4 text-white me-2"></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="bi bi-instagram fs-4 text-white mx-2"></a>
+                    <a href="https://www.facebook.com/" target="_blank" class="bi bi-facebook fs-4 text-white mx-2"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const tl = gsap.timeline();
+
+        const trigger = {
+            trigger: ".section",
+            start: "top bottom", // Change this to start animations when the section's bottom is at the top of the viewport
+            end: "bottom top", // Change this to end animations when the section's top is at the bottom of the viewport
+            scrub: true,
+        };
+
+        gsap.utils.toArray(".section").forEach((section) => {
+            gsap.from(section, {
+            opacity: 0,
+            y: 100,
+            scrollTrigger: trigger,
+            });
+        });
+        });
+    </script>
+</body>
+</html>
